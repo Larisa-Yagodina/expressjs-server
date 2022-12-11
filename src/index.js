@@ -27,3 +27,5 @@ app.listen(PORT, () => {
 
 // const j = JSON.stringify(obj) - перевод объекта в JSON
 // const z = JSON.parse(j) - перевод обратно в объект
+
+// babel src/index.js -d lib
