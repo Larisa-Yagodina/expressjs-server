@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "dev": "nodemon --inspect -r dotenv/config -r ./src/index.js",
+    "build": "./node_modules/.bin/netlify-lambda build src",
     "start": "nodemon --inspect --exec babel-node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel-node": "babel-node --presets='@babel/preset-env' --ignore='foo|bar|baz'"
