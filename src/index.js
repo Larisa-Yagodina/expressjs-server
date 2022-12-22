@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 dbConnect()
 logger(app)
 parseResponse(app)
-//cors(app)
+cors(app)
 routes(app)
 errorHandler(app)
 
