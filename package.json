@@ -5,7 +5,6 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --inspect --exec babel-node src/index.js",
-    "postinstall": "netlify-lambda install",
     "test": "echo \"Error: no test specified\" && exit 1",
     "babel-node": "babel-node --presets='@babel/preset-env' --ignore='foo|bar|baz'",
     "generate:ci": "pnpm run -w build:ui && nuxt generate",
