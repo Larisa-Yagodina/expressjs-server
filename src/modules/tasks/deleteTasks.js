@@ -2,7 +2,7 @@ import Task from './Model';
 
 export default function deleteTasks(req, res) {
 
-  const taskId = req.params.userId;
+  const taskId = req.params.taskId;
 
   Task.deleteOne({_id: taskId})
     .exec()

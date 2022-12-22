@@ -6,6 +6,5 @@ export default function routes(app){
   app.use('/tasks', tasksRouter)
   app.use('/statuses', statusesRouter)
   app.use('/', home)
-
 }
 

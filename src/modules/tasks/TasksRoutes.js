@@ -8,8 +8,7 @@ const tasksRouter = Router();
 
 tasksRouter.get('/', getTasks);
 tasksRouter.post('/', postTasks);
-tasksRouter.patch('/:userId', updateTask);
-tasksRouter.delete('/:userId', deleteTasks);
-
+tasksRouter.patch('/:taskId', updateTask);
+tasksRouter.delete('/:taskId', deleteTasks);
 
 export default tasksRouter;
