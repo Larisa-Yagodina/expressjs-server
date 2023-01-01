@@ -6,7 +6,7 @@ export default function updateService(req, res) {
   Service.findByIdAndUpdate(serviceId, req.body)
     .exec()
     .then(result => {
-      res.status(202).json(result)
+      res.status(202).json('Service was updated')
     })
     .catch(err => {
       console.log(err);

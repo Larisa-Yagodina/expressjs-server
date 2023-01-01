@@ -6,7 +6,7 @@ export default function updateTask(req, res) {
   Task.findByIdAndUpdate(taskId, req.body)
     .exec()
     .then(result => {
-      res.status(202).json(result)
+      res.status(202).json('Task was updated')
     })
     .catch(err => {
       console.log(err);
