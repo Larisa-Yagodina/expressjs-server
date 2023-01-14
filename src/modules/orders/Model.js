@@ -3,14 +3,14 @@ import mongoose from 'mongoose';
 const {Schema} = mongoose;
 
 const orderSchema = new Schema({
-  orderNumber: {type: Number, required: true},
+  orderNumber: {type: Number, required: false},
   clientName: {type: String, required: true},
   service: {
     job: {type: String, required: true},
-    employee: {type: String, required: true},
+    employee: {type: String, required: false},
     price: {type: Number, required: true},
-    primeCost: {type: Number, required: true},
-    createAt: {type: String, required: true},
+    primeCost: {type: Number, required: false},
+    createAt: {type: String, required: false},
   },
   sentToDo: {
     date: {type: String, required: false},
