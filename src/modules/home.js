@@ -1,3 +1,3 @@
 export default function home(req, res) {
-  res.status(202).json('It`s a home page!');
+  res.status(202).json('It`s a home page! Also try /tasks or /statuses');
 }
