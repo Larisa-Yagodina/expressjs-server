@@ -1,10 +1,10 @@
 import express from 'express';
-import errorHandler from './modules/errorHandler';
+import dbConnect from './modules/core/db';
 import logger from './modules/core/logger';
 import parseResponse from './modules/core/parseResponse';
 import cors from './modules/core/cors';
 import routes from './modules/core/routes';
-import dbConnect from './modules/core/db';
+import errorHandler from './modules/errorHandler';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
