@@ -1,10 +1,10 @@
 import express from 'express';
-import dbConnect from '../src/modules/core/db.js';
-import logger from '../src/modules/core/logger.js';
-import parseResponse from '../src/modules/core/parseResponse.js';
-import cors from '../src/modules/core/cors.js';
-import routes from '../src/modules/core/routes.js';
-import errorHandler from '../src/modules/errorHandler.js';
+import dbConnect from './src/modules/core/db.js';
+import logger from './src/modules/core/logger.js';
+import parseResponse from './src/modules/core/parseResponse.js';
+import cors from './src/modules/core/cors.js';
+import routes from './src/modules/core/routes.js';
+import errorHandler from './src/modules/errorHandler.js';
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -30,7 +30,7 @@ app.listen(PORT, () => {
 // const j = JSON.stringify(obj) - перевод объекта в JSON
 // const z = JSON.parse(j) - перевод обратно в объект
 
-// babel src/index3.js -d lib
+// babel src/index.js -d lib
 
 
-// for PACKAGE.JSON "start": "nodemon --inspect --exec babel-node src/index3.js",
+// for PACKAGE.JSON "start": "nodemon --inspect --exec babel-node src/index.js",
