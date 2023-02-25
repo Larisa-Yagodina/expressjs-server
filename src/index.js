@@ -29,3 +29,6 @@ app.listen(PORT, () => {
 // const z = JSON.parse(j) - перевод обратно в объект
 
 // babel src/index.js -d lib
+
+
+// for PACKAGE.JSON "start": "nodemon --inspect --exec babel-node src/index.js",
