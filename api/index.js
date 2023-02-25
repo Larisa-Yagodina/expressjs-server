@@ -9,6 +9,8 @@ import errorHandler from '../src/modules/errorHandler.js';
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+app.use(express.static('public'))
+
 dbConnect()
 logger(app)
 parseResponse(app)
