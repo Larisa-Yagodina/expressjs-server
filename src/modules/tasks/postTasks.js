@@ -1,4 +1,4 @@
-import Task from './Model'
+import Task from './Model';
 
 export default function postTasks(req, res) {
 
@@ -7,7 +7,7 @@ export default function postTasks(req, res) {
     description: req.body.description,
     status:   req.body.status,
     priority: req.body.priority,
-  })
+  });
   newTask
     .save()
     .then(responce => {

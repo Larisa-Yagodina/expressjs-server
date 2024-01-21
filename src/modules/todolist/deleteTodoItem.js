@@ -1,10 +1,10 @@
-import Task from './Model';
+import TodoList from './Model';
 
-export default function deleteTasks(req, res) {
+export default function deleteTodoItem(req, res) {
 
-  const taskId = req.params.taskId;
+  const itemId = req.params.itemId;
 
-  Task.deleteOne({_id: taskId})
+  TodoList.deleteOne({_id: itemId})
     .exec()
     .then(result => {
       res.status(202).json( 'Task was deleted' );
