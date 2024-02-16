@@ -1,7 +1,7 @@
 {
-  "name": "expressjs-server",
+  "name": "expressjs-server-eng-app",
   "version": "1.0.0",
-  "description": "express js server for kanban and CRM",
+  "description": "express js server for english app",
   "main": "index.js",
   "engines": {
     "node": "18.x"

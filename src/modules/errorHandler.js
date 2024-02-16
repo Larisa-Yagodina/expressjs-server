@@ -3,7 +3,7 @@
 function apiNotFound(req, res) {
   res.status(400).json({
     res: 'API not found',
-    recommend: 'Try /tasks or  /statuses'
+    recommend: 'Try /tasks or  /todolist'
   });
 }
 
