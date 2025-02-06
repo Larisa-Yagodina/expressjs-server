@@ -1,10 +1,10 @@
 import express from 'express';
-import dbConnect from './src/modules/core/db.js';
-import logger from './src/modules/core/logger.js';
-import parseResponse from './src/modules/core/parseResponse.js';
-import cors from './src/modules/core/cors.js';
-import routes from './src/modules/core/routes.js';
-import errorHandler from './src/modules/errorHandler.js';
+import dbConnect from './src/modules/core/db';
+import logger from './src/modules/core/logger';
+import parseResponse from './src/modules/core/parseResponse';
+import cors from './src/modules/core/cors';
+import routes from './src/modules/core/routes';
+import errorHandler from './src/modules/errorHandler';
 
 const app = express();
 const PORT = process.env.PORT || 5000;

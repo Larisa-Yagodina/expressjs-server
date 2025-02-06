@@ -1,7 +1,7 @@
 {
-  "name": "expressjs-server-eng-app",
+  "name": "expressjs-server",
   "version": "1.0.0",
-  "description": "express js server for english app",
+  "description": "express js server for kanban and todo",
   "main": "index.js",
   "engines": {
     "node": "18.x"

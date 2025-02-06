@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import getTasks from './getTasks';
-import updateTask from './updateTask';
-import postTasks from './postTasks';
-import deleteTasks from './deleteTasks';
+import getTasks from './getTasks.js';
+import updateTask from './updateTask.js';
+import postTasks from './postTasks.js';
+import deleteTasks from './deleteTasks.js';
 
 const tasksRouter = Router();
 
